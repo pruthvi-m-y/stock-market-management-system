@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f4f8; /* Softer neutral background */
+        padding: 20px;
+        color: #333; /* Dark text for readability */
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: white; /* White for the container */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+        text-align: center;
+        color: #3498db; /* Bright blue for the title */
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    label {
+        color: #555; /* Light gray for labels */
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd; /* Neutral gray border */
+        border-radius: 5px;
+        font-size: 1em;
+        background: #f9f9f9; /* Very light gray background */
+        color: #333;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #3498db; /* Bright blue focus border */
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+
+    .submit-btn {
+        padding: 12px;
+        background: #3498db; /* Bright blue button */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .submit-btn:hover {
+        background: #2980b9; /* Darker blue */
+        transform: scale(1.05); /* Slightly bigger on hover */
+    }
+
+    .success-message {
+        display: none;
+        text-align: center;
+        color: #2ECC71; /* Bright green for success message */
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .login-link {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .login-link a {
+        color: #3498db; /* Bright blue for links */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .login-link a:hover {
+        text-decoration: underline;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 0.9em;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" onsubmit="return validateForm()" action="registrationProcess.jsp">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required/>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required/>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required/>
+            
+            <label for="phn_num">Phone Number:</label>
+            <input type="text" id="phn_num" name="phn_num" required/>
+
+            <label for="userid">User Name:</label>
+            <input type="text" id="userid" name="userid" required/>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required/>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required/>
+
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+        <div id="successMessage" class="success-message">Registration Successful!</div>
+    </div>
+
+    <div class="login-link">
+        <a href="index.html">Click here to login</a>
+    </div>
+
+    <script>
+        function validateForm() {
+            const phoneNumber = document.getElementById('phn_num').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const phoneRegex = /^[0-9]{10}$/; // Validates a 10 digit phone number
+            const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; // Password validation
+
+            // Validate phone number (must be exactly 10 digits)
+            if (!phoneRegex.test(phoneNumber)) {
+                alert('Phone number must be 10 digits.');
+                return false;
+            }
+
+            // Validate password strength
+            if (!passwordRegex.test(password)) {
+                alert('Password must be at least 8 characters long, contain an uppercase letter, a lowercase letter, a number, and a special character.');
+                return false;
+            }
+
+            // Validate if password and confirm password match
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return false;
+            }
+
+            // Show success message on successful validation
+            document.getElementById('successMessage').style.display = 'block';
+            return true;
+        }
+    </script>
+</body>
+</html>
