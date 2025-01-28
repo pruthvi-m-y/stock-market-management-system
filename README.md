@@ -8,6 +8,7 @@ The Stock Market Management System is a web-based application designed to help u
 - **Database**: MySQL
 - **Frameworks**: Bootstrap
 - **Libraries**: jQuery, MySQL Connector/J
+- **Externals Jars**: mysql-connector-java-8.0.11
 - **IDE**: Eclipse IDE
 
 ## Features
