@@ -34,8 +34,12 @@ The Stock Market Management System is a web-based application designed to help u
 3. Set up Apache Tomcat 10.1.33 as the server.
 4. Configure the MySQL Connector/J:
    • Download the mysql-connector-java-8.0.11.jar       file if not already included.
+
    • Place the JAR file in the lib folder of            Apache Tomcat (apache-tomcat/lib/).
+   
    • Alternatively, add it to your project by:
+   
    • Right-click on the project → Build Path →        Add External JARs → Select mysql-connector-       java-8.0.11.jar.
-5. Import the database from the provided SQL file into MySQL.
-6. Run the project by opening front.html as the main page.
+   
+6. Import the database from the provided SQL file into MySQL.
+7. Run the project by opening front.html as the main page.
