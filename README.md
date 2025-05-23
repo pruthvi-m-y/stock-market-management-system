@@ -32,18 +32,18 @@ The Stock Market Management System is a web-based application designed to help u
    git clone https://github.com/pruthvi-m-y/stock-market-management-system.git
 2. Open the project in Eclipse IDE.
 3. Project Structure
-   Ensure your project follows this structure:
-   stock-market-management-system/
-    └── src/
-        └── main/
-            └── webapp/
-                ├── front.html
-                ├── admin_login.jsp
-                ├── admin_logout.jsp
-                └── assets/ (if any)
+   Ensure your project follows this structure:<br>
+   stock-market-management-system/<br>
+    └── src/<br>
+&nbsp; └── main/<br>
+&nbsp;&nbsp;&nbsp; └── webapp/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── front.html<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── admin_login.jsp<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── admin_logout.jsp<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── assets/ (if any)<br>
 
-4. Set up Apache Tomcat 10.1.33 as the server.
-5. Configure the MySQL Connector/J:
+5. Set up Apache Tomcat 10.1.33 as the server.
+6. Configure the MySQL Connector/J:
    • Download the mysql-connector-java-8.0.11.jar       file if not already included.
 
    • Place the JAR file in the lib folder of            Apache Tomcat (apache-tomcat/lib/).
@@ -52,5 +52,5 @@ The Stock Market Management System is a web-based application designed to help u
    
    • Right-click on the project → Build Path →  Add External JARs → Select mysql-connector-java-8.0.11.jar.
    
-6. Import the database from the provided SQL file into MySQL.
-7. Run the project by opening front.html as the main page.
+7. Import the database from the provided SQL file into MySQL.
+8. Run the project by opening front.html as the main page.
