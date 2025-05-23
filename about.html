@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Stock Market Management System</title>
+	    <style>
+        /* Import Roboto font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F7F7F7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #F7F7F7;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #1F3A64;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #ECF0F1;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation styles */
+        .nav-container {
+            background-color: #2980B9;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+            margin: 0 20px 40px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .nav-links a:hover {
+            background-color: #1F618D;
+            border-radius: 5px;
+        }
+
+        .logout-button a {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            background-color: #E74C3C;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-button a:hover {
+            background-color: #C0392B;
+        }
+
+        /* Content styles */
+        .content {
+            background-color: white;
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #2980B9;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        .content h2:first-child {
+            margin-top: 0;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+            text-align: justify;
+        }
+
+        .content ul {
+            list-style: none;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        .content ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .content ul li::before {
+            content: '•';
+            color: #2980B9;
+            font-size: 1.5em;
+            margin-right: 10px;
+            line-height: 1;
+        }
+
+        .content ul li strong {
+            color: #2980B9;
+            margin-right: 5px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .nav-links {
+                margin-bottom: 15px;
+            }
+
+            .nav-links a {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .content h2 {
+                font-size: 1.5em;
+            }
+
+            .content p {
+                font-size: 1em;
+            }
+
+            .content ul {
+                padding: 0 10px;
+            }
+
+            .content ul li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <img src="sm.png" alt="Stock Market Logo" class="logo">
+            <h1>About Us</h1>
+            <p>Explore the World of Stocks</p>
+        </header>
+
+        <!-- Navigation Section -->
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="success.html"><b>Home</b></a>
+                <a href="about.html"><b>About Us</b></a>
+                <a href="market.jsp"><b>Market</b></a>
+                <a href="fund.html"><b>Mutual Funds</b></a>
+                <a href="update.html"><b>Growth</b></a>
+                <a href="contact.html"><b>Contact Us</b></a>
+            </div>
+            <div class="logout-button">
+                <a href="logout.html"><b>Logout</b></a>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h2>Welcome to the Stock Market Management System</h2>
+            <p>
+                The Stock Market Management System (SMMS) is a user-friendly platform designed for individuals interested in learning the basics of stock trading and investments. Our platform simplifies complex concepts and provides a gateway to explore the world of finance with ease.
+            </p>
+
+            <h2>What is the Stock Market?</h2>
+            <p>
+                The stock market serves as a marketplace where buyers and sellers trade shares of publicly listed companies. It enables businesses to raise capital and provides opportunities for individuals to invest and grow their wealth over time.
+            </p>
+
+            <h2>Key Features of SMMS</h2>
+            <ul>
+                <li><strong>Portfolio Management:</strong> Track your investments and monitor their performance effortlessly.</li>
+                <li><strong>Real-Time Stock Prices:</strong> Stay updated with the latest stock market data.</li>
+                <li><strong>Beginner Resources:</strong> Access easy-to-understand guides and examples.</li>
+                <li><strong>Secure and Reliable:</strong> Enjoy a safe and protected platform for your financial data.</li>
+            </ul>
+
+            <h2>Why Learn About the Stock Market?</h2>
+            <p>
+                Learning about the stock market empowers you to make informed financial decisions and plan for a secure future. By understanding how investments work, you can grow your wealth and achieve long-term financial independence.
+            </p>
+
+            <h2>Our Goal</h2>
+            <p>
+                Our goal is to create a beginner-friendly platform that bridges the gap between curiosity and confidence in stock market trading. We aim to simplify the learning process and inspire more individuals to take control of their financial journeys.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

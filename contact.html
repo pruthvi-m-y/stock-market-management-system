@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Stock Market</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+    	/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F7F7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1F3A64;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ECF0F1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+        /* Navigation styles */
+        .nav-container {
+            background-color: #2980B9;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+            margin: 0 20px 40px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+.nav-links a:hover {
+    background-color: #1F618D;
+}
+
+.logout-button a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #E74C3C;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button a:hover {
+    background-color: #C0392B;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h2 {
+    color: #2980B9;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2980B9;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.2);
+}
+
+.contact-form button {
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1F618D;
+}
+
+/* Official Details Section */
+.official-details-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.official-details-section h2 {
+    color: #2980B9;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.info-item i {
+    color: #2980B9;
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.info-item p {
+    margin: 0;
+}
+
+.info-item a {
+    color: #2980B9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #1F618D;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links {
+        margin-bottom: 15px;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+}
+    </style>
+<body>
+    <header>
+    <img src="sm.png" alt="Stock Market Logo" class="logo">
+        <h1>Contact Us</h1>
+        <p>We value your feedback and inquiries.</p>
+    </header>
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="success.html"><b>Home</b></a>
+            <a href="about.html"><b>About Us</b></a>
+            <a href="market.jsp"><b>Market</b></a>
+            <a href="fund.html"><b>Mutual Funds</b></a>
+            <a href="update.html"><b>Growth</b></a>
+            <a href="contact.html"><b>Contact Us</b></a>
+        </div>
+        <!-- Logout button aligned to the right -->
+        <div class="logout-button">
+            <a href="logout.html"><b>Logout</b></a>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Contact Form Section -->
+        <div class="contact-form-section">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" id="contactForm" action="process_contact.jsp" method="POST">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" id="submitButton">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Official Details Section -->
+        <div class="official-details-section">
+            <h2>Our Contact Information</h2>
+
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p><strong>Headquarters:</strong> Stock Market Towers, MG Road, Bengaluru, Karnataka, 560001, India</p>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p><strong>Email:</strong> <a href="mailto:support@stockmarket.com">support@stockmarket.com</a></p>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p><strong>Phone:</strong> <a href="tel:+919632587410">+91 9632587410</a></p>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-business-time"></i>
+                <p><strong>Business Hours:</strong> Monday - Friday: 9 AM - 6 PM</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome Icons CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#contactForm').submit(function(event){
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var message = $('#message').val();
+
+                // Simple check to make sure fields aren't empty
+                if (name === "" || email === "" || message === "") {
+                    event.preventDefault();
+                    alert("Please fill in all the fields!");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

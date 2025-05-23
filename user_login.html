@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market</title>
+    <style>
+		* {
+		    margin: 0;
+		    padding: 0;
+		    box-sizing: border-box;
+		}
+		
+		body {
+		    font-family: Arial, sans-serif;
+		    margin: 0;
+		    padding: 0;
+		    background: #f0f4f8;
+		    color: #333;
+		}
+		
+		header {
+		    background-color: #2c3e50;
+		    color: white;
+		    padding: 20px;
+		    font-family: 'Roboto', sans-serif;
+		    text-align: center;
+		    font-size: 1.5em;
+		    font-weight: bold;
+		    letter-spacing: 1px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		
+		.logo-container {
+		    background: linear-gradient(145deg, #ffffff, #d4d4d4);
+		    padding: 12px;
+		    border-radius: 50%;
+		    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		    margin-right: 15px;
+		}
+		
+		.header-logo {
+		    width: 60px;
+		    height: 60px;
+		    object-fit: cover;
+		    border-radius: 50%;
+		}
+		
+		header span {
+		    font-size: 1.2em;
+		    line-height: 1.5;
+		}
+		
+		.container {
+		    max-width: 450px;
+		    margin: 50px auto;
+		    padding: 30px;
+		    background: white;
+		    border-radius: 10px;
+		    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+		}
+		
+		h1 {
+		    text-align: center;
+		    color: #3498db;
+		    margin-bottom: 15px;
+		}
+		
+		hr {
+		    border: 1px solid #ddd;
+		    margin: 20px 0;
+		}
+		
+		table {
+		    width: 100%;
+		    margin-top: 20px;
+		}
+		
+		th, td {
+		    padding: 12px;
+		    text-align: left;
+		    font-size: 1.1em;
+		}
+		
+		th {
+		    color: #555;
+		    width: 35%;
+		}
+		
+		input[type="text"],
+		input[type="password"] {
+		    width: 100%;
+		    padding: 12px;
+		    border: 1px solid #ddd;
+		    border-radius: 5px;
+		    font-size: 1em;
+		    margin-bottom: 15px;
+		    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+		}
+		
+		input[type="text"]:focus,
+		input[type="password"]:focus {
+		    outline: none;
+		    border-color: #3498db;
+		    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+		}
+		
+		.password-container {
+		    position: relative;
+		}
+		
+		.toggle-password {
+		    position: absolute;
+		    top: 50%;
+		    right: 10px;
+		    transform: translateY(-50%);
+		    cursor: pointer;
+		    color: #3498db;
+		    font-size: 1.2em;
+		}
+		
+		.submit-btn {
+		    width: 100%;
+		    padding: 12px;
+		    background-color: #3498db;
+		    color: white;
+		    border: none;
+		    border-radius: 5px;
+		    font-size: 1.1em;
+		    cursor: pointer;
+		    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+		}
+		
+		.submit-btn:hover {
+		    background-color: #2980b9;
+		    transform: scale(1.02);
+		    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		
+		.submit-btn:focus {
+		    outline: none;
+		    border-color: #2980b9;
+		    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+		}
+		
+		.new-user {
+		    text-align: center;
+		    margin-top: 15px;
+		}
+		
+		.new-user a {
+		    color: #3498db;
+		    text-decoration: none;
+		    font-weight: bold;
+		}
+		
+		.new-user a:hover {
+		    text-decoration: underline;
+		}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="sm.png" alt="Stock Market Logo" class="header-logo">
+        </div>
+        <b>WELCOME TO THE WORLD OF STOCKS</b>
+    </header>
+
+    <div class="container">
+        <h1>STOCK MARKET</h1>
+        <hr>
+
+        <form action="login.jsp" method="post">
+            <table>
+                <tr>
+                    <th>User Name</th>
+                    <td><input type="text" name="usr" required></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td>
+                        <div class="password-container">
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+
+        <div class="new-user"> 
+            <p>New User? <a href="regester.html">Create an account</a></p>
+        </div>
+    </div>
+
+
+</body>
+</html>

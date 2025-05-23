@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Stock Market</title>
+    <style>
+        /* Import Roboto font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F7F7F7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #1F3A64;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #ECF0F1;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation styles */
+        .nav-container {
+            background-color: #2980B9;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+            margin: 0 20px 40px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .nav-links a:hover {
+            background-color: #1F618D;
+            border-radius: 5px;
+        }
+
+        .logout-button a {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            background-color: #E74C3C;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-button a:hover {
+            background-color: #C0392B;
+        }
+
+        /* Main content styles */
+        main {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 1100px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        main h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2980B9;
+        }
+
+        main p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #2980B9;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: #1F618D;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .nav-links {
+                margin-bottom: 15px;
+            }
+
+            .nav-links a {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main h1 {
+                font-size: 2em;
+            }
+
+            main {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="sm.png" alt="Stock Market Logo" class="logo">
+        <h1>Stock Market</h1>
+        <p>Welcome to the World of Stocks</p>
+    </header>
+
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="success.html"><b>Home</b></a>
+            <a href="about.html"><b>About Us</b></a>
+            <a href="market.jsp"><b>Market</b></a>
+            <a href="fund.html"><b>Mutual Funds</b></a>
+            <a href="update.html"><b>Growth</b></a>
+            <a href="contact.html"><b>Contact Us</b></a>
+        </div>
+        <div class="logout-button">
+            <a href="logout.html"><b>Logout</b></a>
+        </div>
+    </div>
+
+    <main>
+        <h1>Explore the Stock Market</h1>
+        <p>
+            Discover market trends, analyze stock performance, and make informed decisions. 
+            Your journey to smarter investments begins here. Stay ahead of the curve with the latest stock market data and insights.
+        </p>
+        <a href="about.html" class="cta-button">Get Started</a>
+    </main>
+
+</body>
+</html>

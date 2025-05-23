@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Management System</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.publicdomainpictures.net/pictures/320000/velka/stock-market-chart.jpg'); /* Stock market background */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        /* Container for centering content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 40px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9); /* Transparent white overlay */
+            border-radius: 15px;
+        }
+
+        /* Logo styling */
+        .logo {
+            max-width: 150px; /* Adjust size based on your logo */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 4rem;
+            color: #1f2a44; /* Darker color for the heading */
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Tagline styling */
+        .tagline {
+            font-size: 1.5rem;
+            color: #555;
+            margin-bottom: 30px;
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Buttons container with spacing */
+        .login-options {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        /* Button styles */
+        .btn {
+            background-color: #ff6b3b; /* Single vibrant color */
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 50px; /* Rounded corners for modern design */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            width: 200px; /* Fixed width for consistent button size */
+            text-align: center;
+        }
+
+        /* Hover effect for buttons */
+        .btn:hover {
+            background-color: #e65a30; /* Slightly darker shade on hover */
+            transform: translateY(-7px); /* Slight upward movement */
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Deepened shadow */
+        }
+
+        /* Footer section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f2a44;
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ff6b3b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem; /* Slightly smaller heading for mobile */
+            }
+
+            .login-options {
+                flex-direction: column;
+                gap: 15px; /* Reduce the gap on smaller screens */
+            }
+
+            .btn {
+                font-size: 1.1rem;
+                padding: 12px;
+                width: 250px; /* Slightly larger button on smaller screens */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Logo inserted here -->
+    <img src="sm.png" alt="Stock Market Management Logo" class="logo">
+    
+    <div class="container">
+        <h1>Welcome to the Stock Market Management System</h1>
+        <p class="tagline">Easily manage your investments, track market trends, and make informed decisions with our user-friendly platform.</p>
+
+        <div class="login-options">
+            <a href="user_login.html" class="btn">Login as Customer</a>
+            <a href="admin_login.jsp" class="btn">Login as Admin</a>
+        </div>
+
+        <!-- Features Section -->
+        <div class="extra-info">
+            <img src="https://image.freepik.com/free-vector/stock-market-analysis_23-2148582512.jpg" alt="Market Analysis" style="max-width: 150px; margin-top: 30px;">
+            <p style="font-size: 1rem; color: #444; max-width: 600px; margin: 20px auto;">Track live stock market prices, analyze trends, and manage your portfolio effortlessly with our cutting-edge tools.</p>
+        </div>
+    </div>
+
+</body>
+</html>
